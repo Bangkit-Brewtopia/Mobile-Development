@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_splash_last"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/desc_img_splash_last"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_splash_last"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/headline_splash_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/opensans_extra_bold"
+        android:text="@string/headline_splash_last"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/loading_splash_last"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title_splash_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:alpha="0.8"
+        android:fontFamily="@font/opensans_semi_bold"
+        android:text="@string/title_splash_last"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/loading_splash_last"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/desc_splash_last"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.7"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/desc_splash_last"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/loading_splash_last"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/loading_splash_first"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:progress="100"
+        app:indicatorColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/loading_splash_middle"
+        app:layout_constraintEnd_toStartOf="@+id/loading_splash_middle"
+        app:layout_constraintTop_toTopOf="@+id/loading_splash_middle"
+        app:trackColor="@color/dark_grey"
+        app:trackCornerRadius="10dp" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/loading_splash_middle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:progress="100"
+        app:indicatorColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_splash_last"
+        app:layout_constraintVertical_bias="0.9"
+        app:trackColor="@color/dark_grey"
+        app:trackCornerRadius="10dp" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/loading_splash_last"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:indicatorColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/loading_splash_middle"
+        app:layout_constraintStart_toEndOf="@+id/loading_splash_middle"
+        app:layout_constraintTop_toTopOf="@+id/loading_splash_middle"
+        app:trackColor="@color/dark_grey"
+        app:trackCornerRadius="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
