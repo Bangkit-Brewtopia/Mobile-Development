@@ -48,4 +48,8 @@ dependencies {
     // Navigation Bar
     implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
     implementation 'com.github.jitpack:android-example:1.0.1'
+    implementation 'com.fxn769:ariana:1.0'
+
+    // Card
+    implementation 'androidx.cardview:cardview:1.0.0'
 }

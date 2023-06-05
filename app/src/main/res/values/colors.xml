@@ -9,4 +9,13 @@
     <color name="dark_grey">#686464</color>
     <color name="grey">#74767B</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--    <color name="home">#93692A</color>-->
+    <color name="home">#5B37B7</color>
+    <color name="like">#C9379D</color>
+    <color name="search">#E6A919</color>
+    <color name="profile">#1194AA</color >
+
+    <color name="dark_brown_signature">#34291B</color>
+    <color name="light_brown_signature">#93692A</color>
 </resources>

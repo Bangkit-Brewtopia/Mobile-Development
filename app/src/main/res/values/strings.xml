@@ -1,15 +1,32 @@
 <resources>
     <string name="app_name">Brewtopia</string>
+
     <string name="desc_img_splash_first">Background First Splash</string>
     <string name="headline_splash_first">FIND OUT</string>
     <string name="title_splash_first">ABOUT COFFEE BEANS</string>
     <string name="desc_splash_first">The ultimate refreshing drink to enjoy in every festival.</string>
+
     <string name="desc_img_splash_middle">Background Middle Splash</string>
     <string name="headline_splash_middle">CHOOSE</string>
     <string name="title_splash_middle">THE BEST COFFEE BEANS</string>
     <string name="desc_splash_middle">Never underestimate the power of a good cup of coffee.</string>
+
     <string name="desc_img_splash_last">Background Last Splash</string>
     <string name="headline_splash_last">TO MAKE</string>
     <string name="title_splash_last">SPECIAL COFFEE</string>
     <string name="desc_splash_last">I’m fueled by happy thoughts  and coffee.</string>
+
+    <string name="menu_home_value">Home</string>
+    <string name="menu_favorite_value">Favorite</string>
+    <string name="menu_chat_value">Chat</string>
+    <string name="menu_scan_value">Scan</string>
+
+    <string name="desc_icon_menu">Icon Menu</string>
+    <string name="desc_icon_search">Icon Search</string>
+
+    <string name="desc_image_brewtopia_coffee">Brewtopia Coffee Image</string>
+    <string name="today">Today</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="greeting">Hi Buddy!</string>
+    <string name="get_it_now">Get It Now</string>
 </resources>
