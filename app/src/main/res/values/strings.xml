@@ -29,4 +29,7 @@
     <string name="recommendation">Recommendation</string>
     <string name="greeting">Hi Buddy!</string>
     <string name="get_it_now">Get It Now</string>
+
+    <string name="sorry">Sorry, this page is currently under development.</string>
+    <string name="page">Name of Page</string>
 </resources>

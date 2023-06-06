@@ -1,31 +1,43 @@
 package academy.bangkit.brewtopia
 
-import androidx.appcompat.app.AppCompatActivity
+import academy.bangkit.brewtopia.databinding.ActivityMainBinding
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.widget.ViewPager2
+import com.ismaeldivita.chipnavigation.ChipNavigationBar
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: DummyAdapter
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var navBar: ChipNavigationBar
+    private lateinit var viewPager: ViewPager2
+    private lateinit var viewPagerAdapter: ViewPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         supportActionBar?.hide()
 
-        recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        navBar = binding.navBar
+        viewPager = binding.ViewPager2
+        viewPagerAdapter = ViewPagerAdapter(this)
+        viewPager.adapter = viewPagerAdapter
 
-        adapter = DummyAdapter(getDummyData())
-        recyclerView.adapter = adapter
+        navBar.setOnItemSelectedListener { id ->
+            val position = getPositionFromMenuItemId(id)
+            if (position != -1) {
+                viewPager.setCurrentItem(position, true)
+            }
+        }
     }
 
-    private fun getDummyData(): List<String> {
-        val data = ArrayList<String>()
-        for (i in 1..20) {
-            data.add("Data Dummy Article $i")
+    private fun getPositionFromMenuItemId(menuItemId: Int): Int {
+        return when (menuItemId) {
+            R.id.menu_home -> 0
+            R.id.menu_favorite -> 1
+            R.id.menu_chat -> 2
+            R.id.menu_scan -> 3
+            else -> -1
         }
-        return data
     }
 }
