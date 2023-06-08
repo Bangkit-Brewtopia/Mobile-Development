@@ -1,5 +1,6 @@
-package academy.bangkit.brewtopia
+package academy.bangkit.brewtopia.main
 
+import academy.bangkit.brewtopia.R
 import academy.bangkit.brewtopia.databinding.ActivityMainBinding
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

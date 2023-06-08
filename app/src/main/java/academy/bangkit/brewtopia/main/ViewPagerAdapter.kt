@@ -1,5 +1,7 @@
-package academy.bangkit.brewtopia
+package academy.bangkit.brewtopia.main
 
+import academy.bangkit.brewtopia.main.dev.DevFragment
+import academy.bangkit.brewtopia.main.home.HomeFragment
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter

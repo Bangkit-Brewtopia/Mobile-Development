@@ -1,9 +1,8 @@
 package academy.bangkit.brewtopia.splash
 
-import academy.bangkit.brewtopia.MainActivity
+import academy.bangkit.brewtopia.main.MainActivity
 import academy.bangkit.brewtopia.R
 import academy.bangkit.brewtopia.databinding.ActivitySplashLastBinding
-import academy.bangkit.brewtopia.databinding.ActivitySplashMiddleBinding
 import android.annotation.SuppressLint
 import android.app.ActivityOptions
 import android.content.Intent

@@ -1,5 +1,6 @@
-package academy.bangkit.brewtopia
+package academy.bangkit.brewtopia.main.home
 
+import academy.bangkit.brewtopia.R
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".main.home.HomeFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -28,45 +28,43 @@
                 android:id="@+id/greeting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
+                android:layout_marginBottom="-3dp"
                 android:fontFamily="@font/opensans_semi_bold"
                 android:text="@string/greeting"
                 android:textColor="#D9FFFFFF"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.06"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toTopOf="@+id/today"
+                app:layout_constraintStart_toStartOf="@+id/today" />
 
             <TextView
                 android:id="@+id/today"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-7dp"
                 android:fontFamily="@font/opensans_extra_bold"
                 android:text="@string/today"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                app:layout_constraintStart_toStartOf="@+id/greeting"
-                app:layout_constraintTop_toBottomOf="@+id/greeting" />
+                app:layout_constraintBottom_toTopOf="@+id/recommendation"
+                app:layout_constraintStart_toStartOf="@+id/recommendation" />
 
             <TextView
                 android:id="@+id/recommendation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-2dp"
+                android:layout_marginBottom="3dp"
                 android:fontFamily="@font/opensans_bold"
                 android:text="@string/recommendation"
                 android:textColor="#E6FFFFFF"
                 android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="@+id/today"
-                app:layout_constraintTop_toBottomOf="@+id/today" />
+                app:layout_constraintBottom_toTopOf="@+id/get_it_now"
+                app:layout_constraintStart_toStartOf="@+id/get_it_now" />
 
             <Button
                 android:id="@+id/get_it_now"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/opensans_bold"
                 android:letterSpacing="0"
                 android:text="@string/get_it_now"
@@ -75,8 +73,8 @@
                 android:textSize="12sp"
                 app:backgroundTint="@color/white"
                 app:cornerRadius="20dp"
-                app:layout_constraintStart_toStartOf="@+id/recommendation"
-                app:layout_constraintTop_toBottomOf="@+id/recommendation" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -120,8 +118,8 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="25dp"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
