@@ -1,12 +1,13 @@
-package academy.bangkit.brewtopia.data.remote.chatbot
+package academy.bangkit.brewtopia.data.remote.config
 
 import academy.bangkit.brewtopia.BuildConfig
+import academy.bangkit.brewtopia.data.remote.ApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class ApiConfig {
+class ApiConfigChat {
     companion object {
         fun getApiService(): ApiService {
             val loggingInterceptor: HttpLoggingInterceptor = if (BuildConfig.DEBUG) {

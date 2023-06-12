@@ -1,4 +1,4 @@
-package academy.bangkit.brewtopia.data.remote.chatbot
+package academy.bangkit.brewtopia.data.remote.response
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

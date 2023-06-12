@@ -1,14 +1,14 @@
 package academy.bangkit.brewtopia.main.chat
 
 import academy.bangkit.brewtopia.R
-import academy.bangkit.brewtopia.data.remote.chatbot.ApiConfig
+import academy.bangkit.brewtopia.data.remote.config.ApiConfigChat
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import academy.bangkit.brewtopia.data.remote.chatbot.ApiService
-import academy.bangkit.brewtopia.data.remote.chatbot.ChatBotResponse
+import academy.bangkit.brewtopia.data.remote.ApiService
+import academy.bangkit.brewtopia.data.remote.response.ChatBotResponse
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -26,7 +26,7 @@ class ChatFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        apiService = ApiConfig.getApiService()
+        apiService = ApiConfigChat.getApiService()
     }
 
     override fun onCreateView(
@@ -59,7 +59,7 @@ class ChatFragment : Fragment() {
         return view
     }
     private fun sendChatMessage(message: String) {
-        val apiService = ApiConfig.getApiService()
+        val apiService = ApiConfigChat.getApiService()
 
         val requestBody = JsonObject()
         requestBody.addProperty("input", message)
