@@ -35,4 +35,16 @@
     <string name="about">About</string>
     <string name="account">Account</string>
     <string name="settings">Settings</string>
+
+    <string name="title_camera">Identify \n Your Coffee Beans Quality Here!</string>
+    <string name="subtitle_camera">In BrewTopia, you can check your own coffee beans quality by taking picture via camera or choose your picture via gallery.</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="identify">Identify</string>
+    <string name="result">Check your coffee quality result here…</string>
+    <string name="flash">Flash</string>
+    <string name="choose_pic">Choose a picture</string>
+    <string name="result_img">Your coffee quality: </string>
+    <string name="error">There\'s a mistake, please try again</string>
+    <string name="no_permission">No permission granted.</string>
 </resources>
