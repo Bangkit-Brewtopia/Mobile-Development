@@ -6,22 +6,27 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.overflowarchives.linkpreview.SkypePreview
+import com.overflowarchives.linkpreview.TelegramPreview
+import com.overflowarchives.linkpreview.TwitterPreview
+import com.overflowarchives.linkpreview.ViewListener
+import com.overflowarchives.linkpreview.WhatsappPreview
+import java.lang.Exception
 
 class ChatAdapter : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
-    private val messageList: MutableList<Pair<String, Boolean>> = mutableListOf()
+    private val messageList: MutableList<Pair<String, String>> = mutableListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessageViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_message, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_message, parent, false)
         return MessageViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
-        val (message, isUserMessage) = messageList[position]
-        if (isUserMessage) {
-            holder.bindUserMessage(message)
-        } else {
-            holder.bindChatbotMessage(message)
+        val (message, src) = messageList[position]
+        when (src) {
+            "user" -> holder.bindUserMessage(message)
+            "bot" -> holder.bindChatbotMessage(message)
+            "link" -> holder.loadUrl(message)
         }
     }
 
@@ -29,26 +34,44 @@ class ChatAdapter : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
         return messageList.size
     }
 
-    fun addMessage(message: String, isUserMessage: Boolean) {
-        messageList.add(Pair(message, isUserMessage))
+    fun addMessage(message: String, src: String) {
+        messageList.add(Pair(message, src))
         notifyItemInserted(messageList.size - 1)
     }
 
     class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val userMessageTextView: TextView = itemView.findViewById(R.id.tv_message)
-        private val chatbotMessageTextView: TextView =
-            itemView.findViewById(R.id.tv_bot_message)
+        private val chatbotMessageTextView: TextView = itemView.findViewById(R.id.tv_bot_message)
+        private val linkPreview: TwitterPreview = itemView.findViewById(R.id.link_preview)
+
+        fun loadUrl(loadUrl: String) {
+            linkPreview.loadUrl(loadUrl, object : ViewListener {
+                override fun onPreviewSuccess(status: Boolean) {
+                    if (status) {
+                        linkPreview.visibility = View.GONE
+                    }
+                }
+
+                override fun onFailedToLoad(e: Exception?) {
+                }
+            })
+
+            userMessageTextView.visibility = View.GONE
+            chatbotMessageTextView.visibility = View.GONE
+        }
 
         fun bindUserMessage(message: String) {
             userMessageTextView.text = message
             userMessageTextView.visibility = View.VISIBLE
             chatbotMessageTextView.visibility = View.GONE
+            linkPreview.visibility = View.GONE
         }
 
         fun bindChatbotMessage(message: String) {
             chatbotMessageTextView.text = message
             chatbotMessageTextView.visibility = View.VISIBLE
             userMessageTextView.visibility = View.GONE
+            linkPreview.visibility = View.GONE
         }
     }
 }

@@ -47,4 +47,8 @@
     <string name="result_img">Your coffee quality: </string>
     <string name="error">There\'s a mistake, please try again</string>
     <string name="no_permission">No permission granted.</string>
+
+    <string name="input_chat">Type a message ...</string>
+    <string name="desc_send_icon">Send Icon</string>
+    <string name="chatbot">ChatBot</string>
 </resources>

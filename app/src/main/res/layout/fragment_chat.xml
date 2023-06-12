@@ -1,56 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main.chat.ChatFragment">
 
-    <LinearLayout
-        android:id="@+id/ll_layout_bar"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/chabot_text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#E4E4E4"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/et_message"
-            android:inputType="textShortMessage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight=".5"
-            android:background="@drawable/bg_outgoing"
-            android:backgroundTint="@android:color/white"
-            android:hint="Type a message..."
-            android:padding="10dp"
-            android:singleLine="true" />
-
-        <Button
-            android:id="@+id/btn_send"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#26A69A"
-            android:text="Send"
-            android:textColor="@android:color/white" />
-
-    </LinearLayout>
+        android:fontFamily="@font/opensans_extra_bold"
+        android:text="@string/chatbot"
+        android:textColor="@color/dark_grey"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_messages"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/ll_layout_bar"
-        android:layout_below="@+id/dark_divider"
-        tools:itemCount="20"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_layout_bar"
+        app:layout_constraintTop_toBottomOf="@+id/chabot_text"
+        tools:itemCount="10"
         tools:listitem="@layout/item_message" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#42A5F5"
-        android:id="@+id/dark_divider"/>
 
-</RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_chat"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_outgoing"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/input_chat"
+            android:inputType="textShortMessage"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_send"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            android:autofillHints="Hai!" />
+
+        <ImageView
+            android:id="@+id/btn_send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/desc_send_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

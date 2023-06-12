@@ -9,15 +9,15 @@
         android:id="@+id/menu_favorite"
         android:icon="@drawable/ic_favorite"
         android:title="@string/menu_favorite_value"
-        app:cnb_iconColor="@color/like" />
+        app:cnb_iconColor="@color/favorite" />
     <item
         android:id="@+id/menu_chat"
         android:icon="@drawable/ic_chat"
         android:title="@string/menu_chat_value"
-        app:cnb_iconColor="@color/search" />
+        app:cnb_iconColor="@color/chat" />
     <item
         android:id="@+id/menu_scan"
         android:icon="@drawable/ic_scan"
         android:title="@string/menu_scan_value"
-        app:cnb_iconColor="@color/profile" />
+        app:cnb_iconColor="@color/scan" />
 </menu>

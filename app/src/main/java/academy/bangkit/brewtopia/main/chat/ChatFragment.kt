@@ -1,23 +1,24 @@
 package academy.bangkit.brewtopia.main.chat
 
 import academy.bangkit.brewtopia.R
+import academy.bangkit.brewtopia.data.remote.ApiService
 import academy.bangkit.brewtopia.data.remote.config.ApiConfigChat
+import academy.bangkit.brewtopia.data.remote.response.ChatBotResponse
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import academy.bangkit.brewtopia.data.remote.ApiService
-import academy.bangkit.brewtopia.data.remote.response.ChatBotResponse
-import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.JsonObject
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class ChatFragment : Fragment() {
     private lateinit var apiService: ApiService
@@ -36,7 +37,7 @@ class ChatFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_chat, container, false)
 
         recyclerView = view.findViewById(R.id.rv_messages)
-        val sendButton: Button = view.findViewById(R.id.btn_send)
+        val sendButton: ImageView = view.findViewById(R.id.btn_send)
         val messageInput: EditText = view.findViewById(R.id.et_message)
 
         val layoutManager = LinearLayoutManager(context)
@@ -50,7 +51,7 @@ class ChatFragment : Fragment() {
         sendButton.setOnClickListener {
             val userInput = messageInput.text.toString().trim()
             if (userInput.isNotEmpty()) {
-                chatAdapter.addMessage(userInput,true)
+                chatAdapter.addMessage(userInput,"user")
                 sendChatMessage(userInput)
                 messageInput.text.clear()
             }
@@ -77,8 +78,22 @@ class ChatFragment : Fragment() {
 
                     // Process the chat-bot response
                     if (msg == "success") {
-                        for (i in data) {
-                            processChatBotResponse(i)
+                        if (data.size == 1) {
+                            processChatBotResponse(data[0])
+                        } else {
+                            var firstMessage = true
+                            for (i in data) {
+                                if (firstMessage) {
+                                    processChatBotResponse(i)
+                                    firstMessage = false
+                                } else {
+                                    val pattern = "\\((.*?)\\)"
+                                    val regex = Regex(pattern)
+                                    val matchResult = regex.find(i)
+                                    val link = matchResult?.groupValues?.get(1) ?: ""
+                                    processChatBotResponseLink(link)
+                                }
+                            }
                         }
                     }
                 } else {
@@ -97,7 +112,12 @@ class ChatFragment : Fragment() {
     }
 
     private fun processChatBotResponse(message: String) {
-        chatAdapter.addMessage(message, false)
+        chatAdapter.addMessage(message, "bot")
+        recyclerView.scrollToPosition(chatAdapter.itemCount.minus(1))
+    }
+
+    private fun processChatBotResponseLink(message: String) {
+        chatAdapter.addMessage(message, "link")
         recyclerView.scrollToPosition(chatAdapter.itemCount.minus(1))
     }
 }
