@@ -47,7 +47,7 @@ class ChatAdapter : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
         fun loadUrl(loadUrl: String) {
             linkPreview.loadUrl(loadUrl, object : ViewListener {
                 override fun onPreviewSuccess(status: Boolean) {
-                    if (status) {
+                    if (!status) {
                         linkPreview.visibility = View.GONE
                     }
                 }
