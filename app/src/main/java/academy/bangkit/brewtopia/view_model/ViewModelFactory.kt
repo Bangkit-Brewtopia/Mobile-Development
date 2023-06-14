@@ -12,9 +12,15 @@ class ViewModelFactory(private val userPreferences: UserPreferences) :
             modelClass.isAssignableFrom(SignInViewModel::class.java) -> {
                 SignInViewModel(userPreferences) as T
             }
+
             modelClass.isAssignableFrom(AccountViewModel::class.java) -> {
                 AccountViewModel(userPreferences) as T
             }
+
+            modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
+                ProfileViewModel(userPreferences) as T
+            }
+
             else -> throw IllegalArgumentException("Unknown ViewModel class: ${modelClass.name}")
         }
     }

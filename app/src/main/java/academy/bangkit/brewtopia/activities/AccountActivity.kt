@@ -16,6 +16,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.datastore.core.DataStore
@@ -58,6 +59,7 @@ class AccountActivity : AppCompatActivity() {
 
     }
 
+    @SuppressLint("CutPasteId")
     private fun dialogSignIn() {
         val dialog = BottomSheetDialog(this)
         dialog.setContentView(R.layout.signin_bottom)
@@ -80,6 +82,7 @@ class AccountActivity : AppCompatActivity() {
 
         signInViewModel.isSuccess.observe(this) {
             if (it) {
+                findViewById<TextView>(R.id.tv_name_profile).text = dialog.findViewById<EditText>(R.id.et_email_signin)?.text.toString()
                 moveActivity(MainActivity::class.java)
                 finish()
                 Toast.makeText(this, R.string.login_success, Toast.LENGTH_SHORT).show()
@@ -157,5 +160,13 @@ class AccountActivity : AppCompatActivity() {
         if (!isFailed) {
             dialogSignIn()
         }
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        val intent = Intent(Intent.ACTION_MAIN)
+        intent.addCategory(Intent.CATEGORY_HOME)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
     }
 }

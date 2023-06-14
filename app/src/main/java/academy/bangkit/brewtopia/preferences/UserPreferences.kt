@@ -17,6 +17,12 @@ class UserPreferences private constructor(private val dataStore: DataStore<Prefe
         }
     }
 
+    fun getName(): Flow<String> {
+        return dataStore.data.map {
+            it[names] ?: ""
+        }
+    }
+
     suspend fun saveToken(token: String) {
         dataStore.edit {
             it[tokens] = token

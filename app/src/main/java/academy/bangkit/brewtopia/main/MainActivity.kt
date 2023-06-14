@@ -2,6 +2,7 @@ package academy.bangkit.brewtopia.main
 
 import academy.bangkit.brewtopia.R
 import academy.bangkit.brewtopia.databinding.ActivityMainBinding
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
@@ -40,5 +41,13 @@ class MainActivity : AppCompatActivity() {
             R.id.menu_scan -> 3
             else -> -1
         }
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        val intent = Intent(Intent.ACTION_MAIN)
+        intent.addCategory(Intent.CATEGORY_HOME)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
     }
 }

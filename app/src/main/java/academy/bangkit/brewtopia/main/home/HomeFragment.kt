@@ -3,6 +3,7 @@ package academy.bangkit.brewtopia.main.home
 import academy.bangkit.brewtopia.R
 import academy.bangkit.brewtopia.activities.AboutActivity
 import academy.bangkit.brewtopia.activities.DetailActivity
+import academy.bangkit.brewtopia.activities.ProfileActivity
 import academy.bangkit.brewtopia.data_artikel.Articles
 import academy.bangkit.brewtopia.data_artikel.ListArticlesAdapter
 import android.annotation.SuppressLint
@@ -108,8 +109,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         }
 
         menuAccount.setOnClickListener {
-            // Handle Account menu item click
-            dialog.dismiss()
+            startActivity(Intent(requireContext(), ProfileActivity::class.java))
         }
 
         menuSettings.setOnClickListener {

@@ -70,6 +70,11 @@
     <string name="empty_name">Name cannot be empty</string>
     <string name="empty_email">Email cannot be empty</string>
     <string name="empty_pass">Password cannot be empty</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm">Do you really want to logout?</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="logged_out">Logged out</string>
 
     <string name="here_profile">Here are our profiles!</string>
     <string name="copyright">©Brewtopia_bangkit_2023</string>
