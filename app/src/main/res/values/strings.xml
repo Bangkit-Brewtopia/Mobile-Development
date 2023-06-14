@@ -52,4 +52,213 @@
     <string name="chatbot">ChatBot</string>
     <string name="coffee_scan">Coffee Scan</string>
     <string name="desc_border">Border for Image Upload</string>
+
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="hint_pass">minimum 8 characters</string>
+    <string name="hint_email">user@email.com</string>
+    <string name="hint_name">write your name here…</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="invalid_password">Password minimum 8 characters</string>
+    <string name="invalid_email">Use valid email format</string>
+    <string name="login_success">You are now logged in!</string>
+    <string name="login_failed">Login failed!</string>
+
+    <string name="failed_connection">Connection Failure</string>
+    <string name="empty_name">Name cannot be empty</string>
+    <string name="empty_email">Email cannot be empty</string>
+    <string name="empty_pass">Password cannot be empty</string>
+
+    <string name="here_profile">Here are our profiles!</string>
+    <string name="copyright">©Brewtopia_bangkit_2023</string>
+    <string name="about_desc">Brewtopia is an application that we created to help entrepreneurs as well as coffee connoisseurs to know how to process the best quality coffee.</string>
+
+
+    <string-array name="article_title">
+        <item>5 Jenis Kopi di Indonesia</item>
+        <item>Cara Mengolah Biji Kopi Robusta</item>
+        <item>Cara Mengolah Biji Kopi Arabika Hingga Menjadi Bubuk Kopi</item>
+        <item>5 Perlengkapan Kopi dan Fungsinya</item>
+        <item>5 Jenis Alat Pembuat Kopi dan Kegunaannya</item>
+        <item>3 Coffee Roaster Terbaik - Ditinjau oleh Coffee Consultant (Tahun 2023)</item>
+        <item>Pilihan Snack yang Cocok untuk Jadi Teman Minum Kopi</item>
+        <item>5 Daerah Penghasil Biji Kopi Terbaik di Indonesia</item>
+    </string-array>
+
+    <string-array name="authors">
+        <item>ChatGPT</item>
+        <item>Imanuel Vicky</item>
+        <item>Mikael Rizki</item>
+        <item>Nadya Mumtazah</item>
+        <item>Aldi Akbar</item>
+        <item>Umar Hakim</item>
+        <item>Christina Andrea</item>
+        <item>Imanuel Vicky</item>
+    </string-array>
+
+    <string-array name="article_content">
+        <item>Kopi Aceh Gayo\n
+Pada bagian paling barat di Indonesia, sebenarnya ada 2 jenis kopi yang diproduksi, yaitu jenis Arabika dan Robusta. Namun yang paling terkenal dari daerah Aceh adalah kopi Gayo Arabika-nya dan dianggap sebagai salah satu kopi terbaik di dunia. Kopi ini memiliki rasa pahit yang tidak memberi bekas rasa pahit yang lekat di lidah setelah meminumnya hal ini lah yang membuat orang-orang menggemari kopi Aceh Gayo ini. Selain itu kopi ini juga beraroma sangat tajam dan hal ini menjadi karakter yang paling kuat dari kopi ini.
+\n\nKopi Toraja\n
+Salah satu varian kopi yang populer dan memiliki kualitas terbaik di Indonesia adalah Kopi Toraja. Seperti namanya, kopi ini berasal dari salah satu daerah Indonesia yaitu tanah Toraja, Sulawesi Selatan. Kopi ini memiliki aroma rasa yang wangi dan khas karena pohon kopi ini ditanam di kawasan tanah vulkanik dan pohon-pohon kopi di daerah tersebut ditanam berdampingan dengan berbagai tanaman rempah. Cita rasa yang sangat nikmat dan khas juga dimiliki oleh kopi ini, dan salah satu hal yang menjadi penyebabnya adalah tanaman kopi ini ditanam di area pegunungan dengan ketinggian mencapai 1400 sampai 2100 mdpl, yakni di Pegunungan Sasean.
+\n\nKopi Lampung\n
+Kopi yang berasal dari daerah Lampung ini lebih terkenal pada jenis kopi Robustanya. Dengan tekstur yang halus, dan rasa yang cukup kuat, kopi ini merupakan salah satu robusta unggulan dari Indonesia yang telah dipasarkan sampai ke mancanegara. Metode dry processing yang digunakan pada pengolahan biji kopi Lampung ini diyakini menjadi penyebab dari asal mulanya cita rasa dan karakteristik yang kuat di dalamnya. Pusat perkebunan kopi ini menempati beberapa kawasan seperti berikut:
+\n-Daerah Kotabumi, hingga perbatasan Bengkulu dan Martapura (Palembang).
+\n-Daerah utara Talang Padang, dengan dataran Ulu-ulu dan Ulu Semuong, hingga Way Tenong.
+\n-Daerah sepanjang teluk Betung, Kalianda, Batu Serampuh, sampai Rajabasa.
+\n\nKopi Jawa\n
+Sesuai dengan namanya, kopi ini berasal dari Pulau Jawa di Indonesia. Saking terkenalnya, Jawa menjadi nama identitas untuk kopi. Kopi ini berjenis Arabika dan memiliki bentuk yang berbeda dengan kopi dari Sumatra dan Sulawesi, serta memiliki cita rasa yang tidak terlalu kaya karena sebagian besar dari kopi Jawa ini diproses secara basah. Kopi jawa memiliki aroma tipis rempah yang khas. Kopi ini dinilai memiliki rasa yang seimbang karena tingkat keasaman yang medium dan kekentalan yang tidak terlalu pekat.
+\n\nKopi Bali Kintamani\n
+Bali tidak hanya terkenal dari segi pariwisatanya saja, tetapi ternyata kopi dari daerah satu ini juga sangat terkenal, kopi tersebut adalah kopi Bali Kintamani. Yang menjadi karakteristik dari kopi ini adalah cita rasa kesegaran dari asam (citrus) seperti jeruk, unik bukan?. Aroma dari kopi ini juga dianggap eksotis, dilengkapi dengan tekstur yang light sehingga kopi ini tidak terlalu pahit dan tidak meninggalkan rasa yang pekat setelahnya. Kopi Bali Kintamani ini berasal dari kawasan dengan ketinggian yang berada di atas 900 dpl. Kopi ini diolah dengan metode wet/washed process untuk melepaskan daging buah dari bijinya.</item>
+        <item>Jenis kopi robusta merupakan salah satu jenis kopi yang paling banyak dibudidayakan di Indonesia. Untuk mengolahnya bisa dilakukan dengan 2 cara, yaitu pengolahan Robusta Wet Process (RWP) yang disebut dengan pengolahan basah dan pengolahan Robusta Dry Process (RDP) yang disebut dengan pengolahan kering. Tujuan utama dari pengolahan kopi ini adalah untuk menurunkan kadar air dari biji kopi hingga menjadi 9% - 12%, karena pada nilai kadar air ini biji kopi tersebut memiliki sifat isostatik, dengan kata lain tidak mudah untuk berubah sifat dan karakteristiknya dari pengaruh kondisi lingkungannya.
+\n\nRobusta Wet Process (RWP)\n
+Proses ini merupakan proses basah dengan menjadikan air sebagai komponen utama dari proses pengolahan ini. Proses ini dilakukan dengan pengupasan kulit buah dan pencucian sehingga nantinya menghasilkan biji kopi yang bersih. Namun proses basah ini membutuhkan biaya yang cukup tinggi. Buah kopi yang tepat masak dipilih karena mudah diproses terutama dengan metode ini, karena kulitnya mudah untuk dikupas, rendemen hasil yang tinggi, biji kopi yang lebih berisi dan padat, waktu yang singkat, dan juga warna biki dan rasa yang lebih baik. Syarat untuk melalui proses ini adalah buah kopi yang akan diproses harus bebas dari kontaminan seperti jamur, karena jika terkontaminasi akan menyebabkan perubahan rasa dan mutu dari biji kopi yang dihasilkan nantinya.
+\n\nRobusta Dry Process (RDP)\n
+Pada proses ini pengolahan kopi dilakukan tanpa melalui tahap pengupasan kulit buah kopi, langsung dengan cara mengeringkan buah kopi dengan panas sinar matahari. Pengolahan ini merupakan pengolahan yang paling sederhana. Berbeda dengan kelemahan dari RWP, RDP ini memiliki kelemahan yaitu membutuhkan waktu yang lama dan tempat yang luas. Hal ini dikarenakan proses RDP sangat bergantung pada ketersediaan sinar matahari.
+Pengolahan RDP ini hanya dilakukan pada kopi yang berwarna hijau dan kopi yang terserang bubuk buah. RDP juga cocok digunakan untuk mengolah kopi yang berkualitas inferior ataupun berkualitas rendah. Dalam pengolahannya kopi dikeringkan bersamaan dengan kulit buahnya, penjemurannya dilakukan dengan cara menghamparkan buah kopi di atas lantai penjemuran dengan ketebalan maksimal 10 cm.
+Pada awal proses pengeringan buah harus sering dibalik dengan alat penggaruk. Pembalikan kopi dilakukan secara intensif sekali per jam. Lamanya proses pengeringan bergantung pada cuaca, ukuran buah kopi, tingkat kematangan, dan kadar air yang terkandung di dalam buah kopi. Untuk mencapai kadar air 15% - 8% waktu penjemuran bisa berlangsung sampai 15 hari.
+</item>
+        <item>Seperti pada pengolahan biji kopi Robusta, biji kopi Arabika juga melalui proses pengolahan kopi baik yang pengolahan basah (wet processing) atau pengolahan kering (dry processing), namun pada umumnya kopi Arabika diproses dengan metode pengolahan basah. Pengolahan biji kopi pada kalangan industri lebih banyak menggunakan mesin, hanya ada 1 atau 2 orang saja untuk mengendalikan mesin. Biji kopi yang akan diproses disortir oleh kolektor, mereka memilih (menyortir) biji kopi yang berbentuk gelondongan merah dari petani. Berikut beberapa proses pasca panen kopi.
+\n\nPanen\n
+Untuk buah merah dipetik secara pilih pohon dan buah hijau yang terpetik dipisahkan dari buah merah. Perlu diketahui, penyortiran buah merah yang baik adalah dilakukan di dalam bak berisi air. Kemudian setelah terkumpul, di dalam bak tersebut kopi yang sudah terkumpul di aduk sehingga buah yang berisi penuh akan mengendap ke bawah dan yang ringan akan mengapung. Buah kopi dapat mengapung atau tidak terisi penuh dikarenakan terserang oleh hama, sehingga harus dipisahkan untuk diproses secara terpisah.
+\n\nPengupasan Kulit Buah\n
+Setelah di panen, proses pengolahan semi basah dilakukan. Diawali dengan pengupasan kulit buah menggunakan mesin pengupas. Air yang disemprotkan bersamaan dengan buah bertujuan untuk membantu mekanisme pengaliran buah kopi di dalam silinder sekaligus juga untuk membersihkan lapisan lendir. Air ini juga digunakan untuk mengurangi tekanan geseran silinder terhadap buah kopi sehingga kulit tanduknya tidak sampai pecah.
+\n\nFermentasi\n
+Ini merupakan proses yang unik, karena hanya dilakukan pada proses pengolahan kopi Arabika. Proses fermentasi ini dapat dilakukan dengan merendam gabah kopi di dalam genangan air (basah) dan tanpa rendaman air (kering). Durasi dilakukannya fermentasi ini bergantung pada jenis kopi, suhu dan juga kelembaban lingkungan, serta ketebalan tumpukan kopi di dalam bak.
+\n\nPencucian dan pengeringan\n
+Hal ini dilakukan untuk menghilangkan sisa lendir dari hasil fermentasi. Pencucian bisa dilakukan dengan menggunakan antara mesin tipe batch atau tipe continue. Setelah dicuci, biji kopi dikeringkan hingga hanya memiliki kandungan air 12-16%. Pengeringan bisa dengan cara penjemuran, mekanis, dan juga kombinasi keduanya.
+\n\nPengupasan Kulit Gabah Kopi\n
+Tujuannya adalah memisahkan biji kopi dengan kulit tanduk. Biji akan diumpankan ke dalam silinder melalui corong yang kemudian masuk ke celah antara rotor dan saringan. Permukaan rotor memiliki ulir dan mampu mendorong biji kopi ke luar silinder, sedangkan serpihan kulit lolos lewat saringan dan dihisap oleh kipas.
+\n\nPengayakan (Grinding) dan Pemolesan\n
+Pengayakan bertujuan untuk memisahkan biji kopi berdasarkan ukuran dan cacat atau tidaknya biji kopi menggunakan ayakan mekanis tipe silinder berputar atau getar.
+\n\nSortasi Manual\n
+Kemudian dilakukan sortasi manual oleh pekerja untuk memisahkan biji yang cacat dengan yang bagus dan juga memisahkan biji long berry dengan pea berry. Setelah di sortasi, dilakukan penjemuran lagi sambil sesekali kopi ditampih untuk menghilangkan kulit yang masih menempel.
+\n\nPenggudangan\n
+Biji kopi lalu di simpan untuk nantinya dipasarkan ke konsumen, dengan memperhatikan kelembaban relatif udara, kadar air dan kebersihan gudang.
+\n\nPengemasan dan Pengepakan\n
+Pengemasan dilakukan dengan maksud untuk mempertahankan aroma dan rasa dari kopi sampai didistribusikan ke konsumen. Karenanya perlu diperhatikan aspek dari kondisi penyimpanan (suhu lingkungan), tingkat sangrai, kadar air kopi dalam kemasan.
+\n\nProses Kontrol dan Pengawasan Mutu\n
+Proses terakhir adalah proses kontrol dan pengawasan mutu untuk selalu mendapatkan mutu biji kopi yang memenuhi standar. Standar umum pengujian dilakukan dengan 2 cara yaitu uji fisik dan uji organoleptik. Standar yang menjadi pedoman yakni Standar Nasional Indonesia dan Specialty Coffee Association of America (SCAA).</item>
+        <item>Apakah kamu seorang pecinta kopi? Jika iya, maka kamu bisa mencoba untuk membuat kopi seperti di coffee shop sendiri lho di rumah. Namun, tentu saja kamu wajib mengetahui alat-alat apa saja yang digunakan untuk membuat kopi serta mengetahui fungsi dari alat-alat tersebut supaya kopi kamu terasa nikmat.
+Karena itu kita akan membahas 5 alat yang dapat kamu gunakan untuk membuat kopi dan apa fungsi dari alat-alatnya. Check it out!\n
+\n\n1. Coffee Grinder\n
+Alat yang pertama yang harus kamu ketahui adalah coffee grinder atau penggiling kopi. Alat ini digunakan untuk menggiling biji kopi. Alat ini akan menggiling halus biji kopi hingga menjadi bubuk, sehingga nantinya bubuk kopi tersebut dapat diseduh menjadi minuman kopi yang nikmat. Terdapat dua jenis coffee grinder, yaitu manual dan juga otomatis. Seperti namanya coffee grinder manual digunakan dengan cara memutar tuas penggiling dengan tangan hingga biji kopi hancur maksimal. Sedangkan untuk menggunakan coffee grinder otomatis, kamu cukup menyambungkan alat tersebut ke sumber listrik tanpa harus mengeluarkan tenaga untuk menggiling.\n
+\n2. Timbangan\n
+Untuk membuat kopi yang nikmat kamu harus menakar dengan tepat setiap elemen yang akan kamu gunakan untuk membuat kopi seperti bubuk kopi, air, gula, dan sebagainya. Karena itu kamu membutuhkan timbangan untuk mendapatkan takaran yang pas dari setiap elemen tersebut. Kamu bisa menggunakan timbangan digital untuk mendapatkan nilai yang akurat dari takaran kamu, dibandingkan dengan timbangan biasa.\n
+\n3. Cerek atau Teko\n
+Cerek atau teko ini adalah salah satu alat yang cukup penting untuk kamu membuat kopi secara manual. Ada beberapa macam teko yang dijual di pasaran, namun untuk membuat kopi pastikan kamu memilih teko dengan leher angsa untuk memudahkan kamu saat menyeduh kopi. Alat ini akan mengeluarkan air panas ke bubuk kopi secara perlahan, namun merata.\n
+\n4. Termometer\n
+Sebuah kopi yang nikmat dipersiapkan dengan penuh hati-hati dan keakuratan bahkan sampai ke titik suhu. Suhu air panas yang tepat akan menghasilkan cita rasa yang lezat. Perlu diketahui juga bahwa akan lebih baik menggunakan air panas yang baru saja direbus daripada menggunakan air yang sudah ditaruh di dispenser atau termos. Namun, kamu tidak boleh menggunakan air mendidih secara langsung untuk menyeduh kopi. Suhu air panas yang ideal untuk menyeduh kopi adalah sekitar 90°C, karena itu kamu memerlukan termometer untuk mengukur suhu air yang tepat. Kamu bisa menggunakan termometer makanan dengan label food grade supaya lebih aman.\n
+\n5. Alat Penyaring Kopi (Coffee Filter)\n
+Minuman kopi tidak akan nikmat bila banyak ampasnya, karena itu untuk membuat kopi yang nikmat, kita dapat menggunakan alat atau kertas penyaring kopi untuk menyaring ampasnya. Kertas penyaring kopi yang digunakan berbentuk seperti kerucut dan ditempatkan pada mulut gelas atau cangkir kopi. Namun sebelum menggunakan kertas penyaring, sebaiknya kertas tersebut dibilas terlebih dahulu, supaya kertas tersebut bersih dan kotoran yang ada pada kertas tersebut tidak ikut masuk ke dalam kopi kita, yang selain bisa mempengaruhi rasa kopi kita juga berpotensi untuk membawa penyakit.\n
+</item>
+        <item>Ada beberapa metode pembuatan kopi yang berbeda dan pastinya memerlukan alat-alat yang berbeda juga. Berikut ini adalah 5 jenis metode pembuatan kopi dan alatnya.
+\n\n1. V60\n
+Jika kalian sering ke coffee shop pasti sudah tidak asing dengan istilah V60 kan? V60 ini adalah cara pembuatan kopi dengan metode pour over menggunakan alat yang dilengkapi dengan corong kerucut dan gagang.
+Alat ini akan ditempatkan pada mulut cangkir dan pada bagian atasnya dilapisi oleh kertas penyaring kopi.
+\n\n2. Vietnam Drip\n
+Vietnam drip ini seperti namanya, digunakan untuk membuat kopi Vietnam yang sangat terkenal dikalangan para pecinta kopi. Bentuk dari alat pembuat kopi satu ini seperti gelas kecil yang didalamnya terdapat saringan. Untuk menggunakannya, alat ini diletakkan di mulut cangkir, kemudian kopi akan diseduh pada bagian dalamnya. Dan setelah itu kopi akan menetes perlahan ke dalam cangkir kopi.
+Untuk membuat kopi Vietnam, kamu bisa menambahkan susu kental manis sesuai selera.
+\n\n3. French Press\n
+French press ini dilengkapi dengan wadah dan saringan yang dinamai plunger. Untuk menggunakan alat ini caranya cukup sederhana, kita hanya perlu menyeduhkan kopi seperti biasa pada wadah French press ini. Setelah itu, kita diamkan selama kurang lebih 4 menit. Kemudian, kita dapat menekan plunger secara perlahan supaya ampas kopi yang ada tidak ikut tertekan ke dasar wadah.
+\n\n4. Pod\n
+Ini merupakan alat pembuat kopi yang lebih canggih lagi, dan kamu bisa menggunakan alat ini untuk membuat kopi di rumah. Untuk menggunakannya sangat mudah, kamu hanya perlu menghubungkan alat ini ke listrik dan kemudian menekan tombol yang tersedia untuk membuat kopi. Kamu juga tidak perlu repot-repot membuat takaran, karena alat ini menggunakan kapsul kopi dan memiliki pengaturan otomatis.
+\n\n5. Coffee Maker\n
+Coffee maker ini sangat cocok bagi kamu yang ingin bisa membuat kopi seperti di coffee shop namun dilakukan di rumah. Ada beberapa jenis coffee maker, mulai dari yang sederhana hingga memiliki pengaturan yang lengkap. Alat ini tidak sulit untuk digunakan, kamu hanya perlu mengikuti buku petunjuk penggunaan yang sudah tersedia beserta paket penjualan alat ini.
+</item>
+        <item>Coffee roaster merupakan alat yang penting untuk menentukan kualitas rasa dan aroma kopi. Alat ini dapat membantu kita menentukan tingkat panggangan kopi yang sesuai dengan keinginan kita, baik light roasted maupun dark roasted. Mesin roasting kopi ini banyak jenisnya. Selain untuk kebutuhan komersial, ada juga yang berkapasitas kecil untuk digunakan di rumah.
+\n\nHot Air Roaster\n
+Penikmat cita rasa kopi yang clean biasanya lebih menyukai metode ini, meskipun produknya jarang ditemui. Metode ini dilakukan dengan memanggang biji kopi menggunakan udara panas, sehingga biji kopi mencapai tingkat kematangan tertentu secara bersamaan. Dengan begitu, biji kopi yang diproses matangnya lebih merata. Pada prosesnya kulit ari dari biji kopi akan mengelupas terpisah dari biji kopi, dan dibuang ke bagian lain dari roaster yang disebut sebagai dust collection. Hot roaster ini juga memiliki suhu dan temperatur yang lebih stabil, karena itu biji kopi akan mencapai kematangan hanya dalam waktu 6-8 menit.
+\n\nDrum Roaster\n
+Cara kerja dari Drum roaster ini dapat dianggap sebagai proses sangrai. Karena biji dari kopi akan matang akibat bersentuhan dengan dinding roasting chamber yang panas. Selama proses roasting dengan alat ini, biji kopi akan terus diaduk supaya seluruh bagian dari biji kopi tersebut matang merata. Proses roasting tersebut pada umumnya akan memakan waktu hingga 15 menit untuk mendapatkan biji kopi yang matang sempurna.
+\n\nHome Roaster\n
+Alat ini sangat cocok bagi para penyeduh kopi dirumah, karena alat ini memiliki kapasitas yang jauh lebih kecil dibandingkan alat roaster lainnya. Ada dua jenis roaster yang dapat anda pilih. Pertama adalah sample roaster, roaster ini berkapasitas 50-500 gram biji kopi. Alat ini bisa digunakan untuk roasting satu batch kopi sekali seduh atau untuk sebagai sampel dalam bisnis kopi anda.
+</item>
+        <item>Waktu ngopi rasanya kurang lengkap kalau tanpa snack atau camilan. Di Indonesia, sudah menjadi budaya kalau ngopi dibarengi dengan makanan kecil juga. Biasanya makanan kecil seperti ubi rebus, pisang goreng, atau singkong goreng jadi pilihan yang seringkali dipilih untuk menemani minum kopi.
+\nNah berikut beberapa rekomendasi camilan yang bisa jadi pilihan kamu untuk menemani minum kopi.
+\n\n- Butter Croissant\n
+Camilan satu ini adalah salah satu teman minum kopi favorit di dunia. Pastry asal Perancis ini memang sudah mendunia, sehingga tidak aneh lagi kalau banyak coffee shop yang menambahkan croissant pada pilihan menu mereka. Croissant ini memang sangat cocok dengan kopi hitam yang rasanya sedikit manis karena rasa butterynya.
+\n\n- Biskuit\n
+Biskuit ini sangat cocok bagi para pecinta kopi yang membutuhkan teman minum kopi, namun tidak punya waktu untuk berburu camilan. Biskuit ini bisa ditemukan dimana saja, dan bisa menjadi paduan yang cocok untuk meningkatkan cita rasa kopi.
+\n\n- Pisang Goreng\n
+Makanan ringan satu ini cocok dengan kopi hitam atau juga kopi susu. Pada dasarnya buah2an memang cocok untuk jadi teman kopi. Buat kamu yang suka eksplorasi rasa, bisa untuk mencoba mencicipi pisang goreng dengan sambal seperti orang di Timur Indonesia. Rasa pedas manisnya sangat cocok jika dipadukan dengan pahitnya kopi hitam panas.
+\n\n- Brownies Coklat\n
+Ada beberapa kopi yang memiliki aroma seperti coklat, jadi brownies coklat ini memang menjadi snack yang tepat untuk menemani waktu ngopi. Ditambah lagi dengan coklatnya yang dikenal dapat meningkatkan mood, kopi dengan brownies coklat ini sangat cocok.
+</item>
+        <item>Industri kopi di Indonesia merupakan salah satu industri terbesar. Bahkan sudah sampai mengeksport ke luar negeri. Dikutip dari Kompas.com, industri kopi di Indonesia ternyata sudah berkembang mulai dari periode kolonialisme Belanda. Industri kopi di Indonesia yang berkembang begitu pesat ini dipengaruhi oleh tren gelombang ketiga yang sedang terjadi di dunia.
+
+\nSeiring berjalannya waktu, semakin banyak masyarakat yang menyukai kopi. Hal ini ditandai dengan menjamurnya kedai kopi yang tidak pernah sepi pengunjung dan meningkatnya produksi kopi per tahun-nya sebesar 1-2 persen. Perlu diketahui juga, Indonesia merupakan negara produsen kopi terbesar di dunia setelah Brazil dan Vietnam.
+
+\nBerikut ini 5 wilayah penghasil kopi terbaik di Indonesia.\n
+\nMandailing\n
+Di Sumatera ada beberapa daerah yang menghasilkan biji kopi terbaik. Sumatera Utara memiliki kopi dengan kualitas yang mendunia, yaitu kopi Mandailing. Perkebunan kopi di Mandailing ini sudah ada sejak sekitar tahun 1800-an yang berawal dari kebijakan tanam paksa pemerintahan Hindia-Belanda.
+Kopi Mandailing ini memiliki keasaman yang cenderung rendah dan ada aftertaste manis yang khas. Kopi ini digemari banyak penikmat kopi dikarenakan aroma floral dan buahnya yang sangat harum.
+\n\nAceh\n
+Selain kopi Mandailing, kopi Gayo asal Aceh juga salah satu kopi dari Indonesia yang sudah berhasil mendunia. Nama kopi Gayo ini sendiri tercipta karena ladang perkebunan yang sudah ada sejak lebih dari satu abad yang lalu ini terletak di daerah dataran tinggi Gayo, Aceh Tengah.
+Gayo terkenal dengan kualitas kopi Arabikanya yang bahkan sempat dinobatkan sebagai arabika terbaik di dunia, dan bukan hanya sekali tetapi beberapa kali. Tingkat keasaman yang seimbang, kekentalan yang ringan, rasa yang tidak terlalu pahit, dan aroma harum yang khas menjadikan kopi ini begitu digemari.
+\n\nKintamani\n
+Selain terkenal dengan keindahan alamnya, Bali juga terkenal dengan kopi Kintamani-nya. Seperti namanya kopi ini ditanam di pegunungan Kintamani, Bali. Perkebunan kopi ini berada di lereng gunung Batur dan media tanam yang digunakan adalah tanah vulkanis dari gunung berapi. Kopi Kintamani ini terkenal karena memiliki aroma jeruk dan rempah yang unik serta fruity saat diseduh. Hal ini dikarenakan disekitar perkebunan dari kopi Kintamani ini terdapat banyak pohon buah-buahan.
+\n\nToraja\n
+Dari daerah Sulawesi, Toraja juga terdapat kopi yang menjadi minuman favorit di hampir seluruh belahan dunia. Kopi Toraja ini digemari karena rasanya yang pahit tetapi tetap terasa lembut di akhir. Ada rasa fruity dan floral juga yang terasa saat kopi ini diteguk. Uniknya, aftertaste dari kopi ini sama sekali tidak pahit. Dengan aroma harumnya juga yang kabarnya dikarenakan tanaman kopi ini ditanam berdampingan dengan tanaman rempah yang wangi.
+\n\nFlores\n
+Ada juga kopi dari daerah Flores yang dianggap berbeda dengan kopi yang berasal dari daerah penghasil kopi lain lantaran memiliki iklim yang cukup unik. Flores dipengaruhi oleh iklim tropisnya Indonesia dan iklim subtropis Australia. Iklim dan suhu tersebut yang kemudian mempengaruhi kualitas dari kopi Flores ini.
+Mayoritas dari kopi Flores dibudidayakan di dataran Ngada yang merupakan daerah pegunungan dengan tanah vulkanis. Biji kopi Flores dianggap berkualitas karena proses panennya yang dikenal sangat selektif. Kopi ini memiliki cita rasa yang unik, rasa yang akan muncul saat meneguknya mirip dengan perpaduan rasa hazelnut, kacang, dan coklat yang manis.
+</item>
+    </string-array>
+
+    <integer-array name="article_banner">
+        <item>@drawable/banner_1</item>
+        <item>@drawable/banner_2</item>
+        <item>@drawable/banner_3</item>
+        <item>@drawable/banner_4</item>
+        <item>@drawable/banner_5</item>
+        <item>@drawable/banner_6</item>
+        <item>@drawable/banner_7</item>
+        <item>@drawable/banner_8</item>
+    </integer-array>
+
+    <integer-array name="article_cover">
+        <item>@drawable/cover_1</item>
+        <item>@drawable/cover_2</item>
+        <item>@drawable/cover_3</item>
+        <item>@drawable/cover_4</item>
+        <item>@drawable/cover_5</item>
+        <item>@drawable/cover_6</item>
+        <item>@drawable/cover_7</item>
+        <item>@drawable/cover_8</item>
+    </integer-array>
+
+    <string name="linkedin">Linkedin</string>
+
+    <!--developers-->
+    <string-array name="data_name">
+        <item>Aldi Akbar Alimi</item>
+        <item>Christina Andrea Putri</item>
+        <item>Mikael Rizki Pandu Ekanto</item>
+        <item>Imanuel Vicky Sanjaya</item>
+        <item>Umar Hakim</item>
+        <item>Nadya Mumtazah</item>
+    </string-array>
+
+    <!--linkedin-->
+    <string-array name="linkedin">
+        <item>https://www.linkedin.com/in/aldiakbaralimi/</item>
+        <item>https://www.linkedin.com/in/christinandrea/</item>
+        <item>https://www.linkedin.com/in/mikaelrizki</item>
+        <item>https://www.linkedin.com/in/imanuel-vicky-s</item>
+        <item>https://www.linkedin.com/in/umar-hakim-65a32b1b7/</item>
+        <item>https://www.linkedin.com/in/nadya-mumtazah-662519206/</item>
+    </string-array>
+
+    <!--developer profile-->
+    <integer-array name="profile_dev">
+        <item>@drawable/img_profil_aldi</item>
+        <item>@drawable/img_profil_tina</item>
+        <item>@drawable/img_profil_kiki</item>
+        <item>@drawable/img_profil_nuel</item>
+        <item>@drawable/img_profil_umar</item>
+        <item>@drawable/img_profil_nadya</item>
+    </integer-array>
 </resources>

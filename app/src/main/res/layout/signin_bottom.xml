@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:layout_marginBottom="-100dp"
+    android:id="@+id/layout_sign_in">
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/md_signin"
+        android:layout_width="220dp"
+        android:layout_height="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title_signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="@string/signin"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_email_signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <academy.bangkit.brewtopia.custom_view.EmailInput
+        android:id="@+id/et_email_signin"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:autofillHints="emailAddress"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/et_signin_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_signin_password"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <TextView
+        android:id="@+id/tv_email_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/et_email_signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <academy.bangkit.brewtopia.custom_view.PasswordInput
+        android:id="@+id/et_signin_password"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:hint="@string/hint_pass"
+        android:autofillHints="password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <TextView
+        android:id="@+id/tv_signin_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/et_signin_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_signin"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/pb_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
