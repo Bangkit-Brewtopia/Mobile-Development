@@ -37,7 +37,6 @@
     <string name="settings">Settings</string>
 
     <string name="title_camera">Identify \n Your Coffee Beans Quality Here!</string>
-    <string name="subtitle_camera">In BrewTopia, you can check your own coffee beans quality by taking picture via camera or choose your picture via gallery.</string>
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>
     <string name="identify">Identify</string>
@@ -51,4 +50,6 @@
     <string name="input_chat">Type a message ...</string>
     <string name="desc_send_icon">Send Icon</string>
     <string name="chatbot">ChatBot</string>
+    <string name="coffee_scan">Coffee Scan</string>
+    <string name="desc_border">Border for Image Upload</string>
 </resources>

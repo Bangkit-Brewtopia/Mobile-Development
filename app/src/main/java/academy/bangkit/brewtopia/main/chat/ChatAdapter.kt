@@ -1,17 +1,15 @@
 package academy.bangkit.brewtopia.main.chat
 
 import academy.bangkit.brewtopia.R
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.overflowarchives.linkpreview.SkypePreview
-import com.overflowarchives.linkpreview.TelegramPreview
 import com.overflowarchives.linkpreview.TwitterPreview
 import com.overflowarchives.linkpreview.ViewListener
-import com.overflowarchives.linkpreview.WhatsappPreview
-import java.lang.Exception
 
 class ChatAdapter : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
     private val messageList: MutableList<Pair<String, String>> = mutableListOf()
@@ -37,6 +35,11 @@ class ChatAdapter : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
     fun addMessage(message: String, src: String) {
         messageList.add(Pair(message, src))
         notifyItemInserted(messageList.size - 1)
+        logMessageList()
+    }
+
+    private fun logMessageList() {
+        Log.d("ChatAdapter", "Message List: $messageList")
     }
 
     class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -46,16 +49,14 @@ class ChatAdapter : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
 
         fun loadUrl(loadUrl: String) {
             linkPreview.loadUrl(loadUrl, object : ViewListener {
-                override fun onPreviewSuccess(status: Boolean) {
-                    if (!status) {
-                        linkPreview.visibility = View.GONE
-                    }
+                override fun onFailedToLoad(e: Exception?) {
+                    Toast.makeText(itemView.context, "Failed to load: ${e?.message}", Toast.LENGTH_SHORT).show()
                 }
 
-                override fun onFailedToLoad(e: Exception?) {
+                override fun onPreviewSuccess(status: Boolean) {
+                    Toast.makeText(itemView.context, "Preview Success", Toast.LENGTH_SHORT).show()
                 }
             })
-
             userMessageTextView.visibility = View.GONE
             chatbotMessageTextView.visibility = View.GONE
         }
