@@ -16,7 +16,7 @@ class ApiConfigChat {
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.NONE)
             }
             val client = OkHttpClient.Builder().addInterceptor(loggingInterceptor).build()
-            val retrofit = Retrofit.Builder().baseUrl("https://chatbot-api-zwqpt72g4a-et.a.run.app")
+            val retrofit = Retrofit.Builder().baseUrl("https://chatbot-en-api-zwqpt72g4a-et.a.run.app/")
                 .addConverterFactory(GsonConverterFactory.create()).client(client).build()
             return retrofit.create(ApiService::class.java)
         }

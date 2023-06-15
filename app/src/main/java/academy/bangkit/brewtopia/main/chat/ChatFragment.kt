@@ -45,8 +45,11 @@ class ChatFragment : Fragment() {
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = chatAdapter
 
-        processChatBotResponse("Hai, Selamat Datang di ChatBot Brewtopia!")
-        processChatBotResponse("Gunakan Bahasa Indonesia dan Kamu dapat bertanya apa saja tentang Kopi disini :D")
+//        processChatBotResponse("Hai, Selamat Datang di ChatBot Brewtopia!")
+//        processChatBotResponse("Gunakan Bahasa Indonesia dan Kamu dapat bertanya apa saja tentang Kopi disini :D")
+
+        processChatBotResponse("Hi, Welcome to Brewtopia ChatBot!")
+        processChatBotResponse("Please use English and feel free to ask anything about coffee here :D")
 
         sendButton.setOnClickListener {
             val userInput = messageInput.text.toString().trim()

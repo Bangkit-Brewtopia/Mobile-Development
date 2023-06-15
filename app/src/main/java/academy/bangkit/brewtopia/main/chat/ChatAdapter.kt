@@ -34,8 +34,8 @@ class ChatAdapter : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
 
     fun addMessage(message: String, src: String) {
         messageList.add(Pair(message, src))
-        notifyItemInserted(messageList.size - 1)
-        logMessageList()
+//        notifyItemInserted(messageList.size - 1)
+//        logMessageList()
     }
 
     private fun logMessageList() {
@@ -48,15 +48,19 @@ class ChatAdapter : RecyclerView.Adapter<ChatAdapter.MessageViewHolder>() {
         private val linkPreview: TwitterPreview = itemView.findViewById(R.id.link_preview)
 
         fun loadUrl(loadUrl: String) {
-            linkPreview.loadUrl(loadUrl, object : ViewListener {
-                override fun onFailedToLoad(e: Exception?) {
-                    Toast.makeText(itemView.context, "Failed to load: ${e?.message}", Toast.LENGTH_SHORT).show()
-                }
+            try {
+                linkPreview.loadUrl(loadUrl, object : ViewListener {
+                    override fun onFailedToLoad(e: Exception?) {
+                        Toast.makeText(itemView.context, "Failed to load: ${e?.message}", Toast.LENGTH_SHORT).show()
+                    }
 
-                override fun onPreviewSuccess(status: Boolean) {
-                    Toast.makeText(itemView.context, "Preview Success", Toast.LENGTH_SHORT).show()
-                }
-            })
+                    override fun onPreviewSuccess(status: Boolean) {
+                        Toast.makeText(itemView.context, "Preview Success", Toast.LENGTH_SHORT).show()
+                    }
+                })
+            } catch (e: Exception) {
+                Toast.makeText(itemView.context, "An error occurred: ${e.message}", Toast.LENGTH_SHORT).show()
+            }
             userMessageTextView.visibility = View.GONE
             chatbotMessageTextView.visibility = View.GONE
         }

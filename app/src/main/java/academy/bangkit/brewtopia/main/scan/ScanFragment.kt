@@ -52,13 +52,13 @@ class ScanFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.btn_camera).setOnClickListener {
+        view.findViewById<ImageView>(R.id.upload_camera).setOnClickListener {
             startCameraX()
         }
-        view.findViewById<Button>(R.id.btn_gallery).setOnClickListener {
+        view.findViewById<View>(R.id.upload_gallery).setOnClickListener {
             startGallery()
         }
-        view.findViewById<Button>(R.id.btn_identify).setOnClickListener {
+        view.findViewById<TextView>(R.id.btn_identify).setOnClickListener {
             upload(getFile)
         }
     }
