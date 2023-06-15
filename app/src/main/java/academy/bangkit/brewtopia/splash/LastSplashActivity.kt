@@ -2,6 +2,7 @@ package academy.bangkit.brewtopia.splash
 
 import academy.bangkit.brewtopia.main.MainActivity
 import academy.bangkit.brewtopia.R
+import academy.bangkit.brewtopia.activities.AccountActivity
 import academy.bangkit.brewtopia.databinding.ActivitySplashLastBinding
 import android.annotation.SuppressLint
 import android.app.ActivityOptions
@@ -32,7 +33,7 @@ class LastSplashActivity : AppCompatActivity() {
 
         val rightZoneView: View = findViewById(R.id.right_zone)
         rightZoneView.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, AccountActivity::class.java)
             startActivity(intent, options.toBundle())
             waitNext = false
             finish()
@@ -57,7 +58,7 @@ class LastSplashActivity : AppCompatActivity() {
                 )
                 when (progress) {
                     100 -> {
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, AccountActivity::class.java)
                         startActivity(intent, options.toBundle())
                         finish()
                     }
