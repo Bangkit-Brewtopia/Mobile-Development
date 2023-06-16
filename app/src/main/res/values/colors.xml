@@ -11,12 +11,14 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="home">#93692A</color>
+    <color name="favorite">#93692A</color>
 <!--    <color name="home">#5B37B7</color>-->
 <!--    <color name="home">#E6A919</color>-->
-    <color name="favorite">#C9379D</color>
+<!--    <color name="favorite">#C9379D</color>-->
 <!--    <color name="search">#BB86FC</color>-->
     <color name="chat">#93692A</color>
     <color name="scan">#93692A</color >
 
+    <color name="brown_signature">#93692A</color>
     <color name="dark_brown_signature">#34291B</color>
 </resources>

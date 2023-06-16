@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_result"
+    android:layout_width="match_parent"
+    android:layout_height="600dp">
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Brewtopia Result"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:text="Based on the pictures we have identified, we can conclude that the coffee beans you have have the following conditions:"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Defect"
+        android:textColor="#E05A47"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+    <ImageView
+        android:id="@+id/wrong"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_correct"
+        app:layout_constraintEnd_toStartOf="@+id/tv_correct"
+        app:layout_constraintTop_toTopOf="@+id/tv_correct"
+        app:srcCompat="@drawable/img_deffect" />
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:text="Coffee beans that classify as DEFECT can be caused by many factors, such as nature, processing of the beans, etc. The thing that you can do for the coffee beans that has a defect is you can sort out that coffee beans, so the coffee beans were not included for creating the coffee (recommended) or you can still process it, but it will have some effect on the taste of the coffee"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_correct" />
+
+    <TextView
+        android:id="@+id/desc3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:text="But, the decision is back to yourself. Because everyone has a different amount of coffee beans. If you have a small number of coffee beans, you can still put some of the defect coffee beans. But, the color of the defect coffee beans has to be slightly different from the normal one."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc2" />
+
+    <TextView
+        android:id="@+id/desc4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/opensans_semi_bold"
+        android:gravity="center"
+        android:text="Thank You."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

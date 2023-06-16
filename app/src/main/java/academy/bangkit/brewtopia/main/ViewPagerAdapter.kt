@@ -2,6 +2,7 @@ package academy.bangkit.brewtopia.main
 
 import academy.bangkit.brewtopia.main.chat.ChatFragment
 import academy.bangkit.brewtopia.main.dev.DevFragment
+import academy.bangkit.brewtopia.main.favorite.FavoriteFragment
 import academy.bangkit.brewtopia.main.home.HomeFragment
 import academy.bangkit.brewtopia.main.scan.ScanFragment
 import androidx.appcompat.app.AppCompatActivity
@@ -13,7 +14,7 @@ class ViewPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activ
         var fragment: Fragment? = null
         when (position) {
             0 -> fragment = HomeFragment()
-            1 -> fragment = DevFragment("fav")
+            1 -> fragment = FavoriteFragment()
             2 -> fragment = ChatFragment()
             3 -> fragment = ScanFragment()
         }

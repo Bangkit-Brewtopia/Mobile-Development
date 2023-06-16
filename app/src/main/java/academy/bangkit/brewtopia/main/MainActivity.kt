@@ -31,6 +31,37 @@ class MainActivity : AppCompatActivity() {
                 viewPager.setCurrentItem(position, true)
             }
         }
+
+        var status = true
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                if (status) {
+                    navBar.setItemSelected(getMenuItemId(0), false)
+                    status = false
+                } else {
+                    navBar.setItemSelected(getMenuItemId(position), true)
+                }
+            }
+        })
+    }
+
+    fun navigateToChatFragment() {
+        viewPager.currentItem = 2
+    }
+
+    fun navigateToScanFragment() {
+        viewPager.currentItem = 3
+    }
+
+    private fun getMenuItemId(position: Int): Int {
+        return when (position) {
+            0 -> R.id.menu_home
+            1 -> R.id.menu_favorite
+            2 -> R.id.menu_chat
+            3 -> R.id.menu_scan
+            else -> -1
+        }
     }
 
     private fun getPositionFromMenuItemId(menuItemId: Int): Int {

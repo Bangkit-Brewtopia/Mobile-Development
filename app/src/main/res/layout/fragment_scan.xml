@@ -140,12 +140,12 @@
         android:layout_width="0dp"
         android:layout_height="320dp"
         android:layout_gravity="center|top"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
         android:background="@drawable/bg_image_preview"
         android:contentDescription="@string/camera"
         android:scaleType="centerCrop"
         android:src="@drawable/img_desc_scan"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="45dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_identify"
         app:layout_constraintEnd_toEndOf="@+id/iv_border"
         app:layout_constraintStart_toStartOf="@+id/iv_border"
@@ -198,11 +198,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="112dp"
+        android:backgroundTint="@color/white"
         android:visibility="gone"
-        app:layout_constraintStart_toEndOf="@+id/iv_border"
-        app:layout_constraintTop_toBottomOf="@+id/ll_layout_bar" />
+        app:layout_constraintBottom_toBottomOf="@+id/iv_camera"
+        app:layout_constraintEnd_toEndOf="@+id/iv_camera"
+        app:layout_constraintStart_toStartOf="@+id/iv_camera"
+        app:layout_constraintTop_toTopOf="@+id/iv_camera" />
 
     <ImageView
         android:id="@+id/iv_border"

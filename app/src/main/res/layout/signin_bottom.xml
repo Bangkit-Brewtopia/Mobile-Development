@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <academy.bangkit.brewtopia.custom_view.EmailInput
+    <academy.bangkit.brewtopia.customview.EmailInput
         android:id="@+id/et_email_signin"
         android:layout_width="250dp"
         android:layout_height="48dp"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <academy.bangkit.brewtopia.custom_view.PasswordInput
+    <academy.bangkit.brewtopia.customview.PasswordInput
         android:id="@+id/et_signin_password"
         android:layout_width="250dp"
         android:layout_height="48dp"

@@ -1,58 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="85dp"
-    android:padding="16dp"
-    android:background="@drawable/bg_dummy"
-    android:layout_marginBottom="15dp">
+    android:layout_height="120dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/bg_article">
 
-    <ImageView
-        android:id="@+id/iv_cover_article"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cover_article"
+        android:layout_width="100dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="2dp"
+        android:backgroundTint="@android:color/transparent"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/iv_cover_article"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tv_title_cover"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Article"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/opensans_semi_bold"
+        android:gravity="start|center"
         android:singleLine="true"
-        android:layout_marginStart="20dp"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@id/iv_cover_article"
+        android:text="Article"
+        android:textColor="@color/dark_grey"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cover_article"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_author_cover"
-        android:layout_width="70dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fav_count"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Author"
-        android:textSize="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/iv_cover_article"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_cover"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="SmallSp" />
+        android:layout_marginTop="8dp"
+        android:padding="6dp"
+        android:background="@drawable/bg_auth"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_cover"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_cover">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_love"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_fav_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="180"
+            android:textSize="11sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="6dp"
+        android:background="@drawable/bg_auth"
+        app:layout_constraintStart_toEndOf="@+id/fav_count"
+        app:layout_constraintTop_toTopOf="@+id/fav_count">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_author"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_author_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="Mikael Rizki"
+            android:textSize="11sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/tv_content_cover"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="25dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:maxLines="2"
+        android:text="This value defines the corner shape type. It can be either rounded or cut. Using rounded will make the corner curved whereas using cut will give the corner a subtle cut. If you don’t declare cornerFamily, then by default it will be rounded. Below is the example:"
+        android:textColor="#BCBCBC"
         android:textSize="10sp"
-        android:singleLine="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tv_author_cover"
-        app:layout_constraintStart_toEndOf="@+id/iv_cover_article"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fav_count"
+        app:layout_constraintTop_toBottomOf="@+id/fav_count"
         tools:ignore="SmallSp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

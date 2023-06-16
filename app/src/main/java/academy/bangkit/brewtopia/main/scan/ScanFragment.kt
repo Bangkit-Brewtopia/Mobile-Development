@@ -1,5 +1,9 @@
 package academy.bangkit.brewtopia.main.scan
 
+import academy.bangkit.brewtopia.R
+import academy.bangkit.brewtopia.data.remote.config.ApiConfigScan
+import academy.bangkit.brewtopia.data.remote.response.ScanResponse
+import academy.bangkit.brewtopia.utils.uriToFile
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -11,7 +15,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -21,16 +24,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import academy.bangkit.brewtopia.R
-import academy.bangkit.brewtopia.data.remote.config.ApiConfigScan
-import academy.bangkit.brewtopia.data.remote.response.ScanResponse
-import academy.bangkit.brewtopia.utils.uriToFile
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.asRequestBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
+
 
 class ScanFragment : Fragment() {
     private var getFile: File? = null
@@ -77,8 +78,11 @@ class ScanFragment : Fragment() {
                         if (response.isSuccessful) {
                             val responseBody = response.body()
                             if (responseBody != null && !responseBody.error) {
-                                val tvResult = view?.findViewById<TextView>(R.id.tv_result_coffee)
-                                tvResult?.text = responseBody.message
+                                if (responseBody.message == "normal") {
+                                    dialogResultNormal()
+                                } else {
+                                    dialogResultDefect()
+                                }
                                 showLoading(false)
                             }
                         } else {
@@ -164,6 +168,18 @@ class ScanFragment : Fragment() {
 
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(requireContext(), it) == PackageManager.PERMISSION_GRANTED
+    }
+
+    private fun dialogResultNormal() {
+        val bottomSheetDialog = BottomSheetDialog(requireContext())
+        bottomSheetDialog.setContentView(R.layout.result_scan_normal)
+        bottomSheetDialog.show();
+    }
+
+    private fun dialogResultDefect() {
+        val bottomSheetDialog = BottomSheetDialog(requireContext())
+        bottomSheetDialog.setContentView(R.layout.result_scan_defect)
+        bottomSheetDialog.show();
     }
 
     companion object {
