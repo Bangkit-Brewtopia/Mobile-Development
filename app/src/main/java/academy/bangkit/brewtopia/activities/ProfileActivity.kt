@@ -6,6 +6,7 @@ import academy.bangkit.brewtopia.main.MainActivity
 import academy.bangkit.brewtopia.preferences.UserPreferences
 import academy.bangkit.brewtopia.view_model.ProfileViewModel
 import academy.bangkit.brewtopia.view_model.ViewModelFactory
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -24,20 +25,38 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var userPreferences: UserPreferences
     private lateinit var profileViewModel: ProfileViewModel
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         userPreferences = UserPreferences.getInstance(datastore)
         profileViewModel =
             ViewModelProvider(this, ViewModelFactory(userPreferences))[ProfileViewModel::class.java]
         profileViewModel.getName().observe(this) {
             if (it.isNotEmpty()) {
-                binding.tvNameProfile.text = it.toString()
+                binding.tvNameProfile.text = "Hi, $it"
             }
         }
         binding.btnLogout.setOnClickListener{
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Logout")
+                .setMessage(R.string.logout_confirm)
+                .setNegativeButton(R.string.cancel) { dialog, _ ->
+                    dialog.dismiss()
+                }
+                .setPositiveButton(R.string.confirm) { _, _ ->
+                    profileViewModel.clearSession()
+                    startActivity(Intent(this@ProfileActivity, AccountActivity::class.java))
+                    finish()
+                    Toast.makeText(this, R.string.logged_out, Toast.LENGTH_SHORT).show()
+                }
+                .show()
+        }
+        binding.ivLogoutIcon.setOnClickListener{
+
             MaterialAlertDialogBuilder(this)
                 .setTitle("Logout")
                 .setMessage(R.string.logout_confirm)

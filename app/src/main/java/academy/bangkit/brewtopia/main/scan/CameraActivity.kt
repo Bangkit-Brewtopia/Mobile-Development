@@ -27,6 +27,7 @@ class CameraActivity : AppCompatActivity() {
         binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
         startCamera()
+        supportActionBar?.hide()
 
         binding.switchCamera.setOnClickListener {
             cameraSelector =
@@ -62,6 +63,9 @@ class CameraActivity : AppCompatActivity() {
                 val flash = findViewById<SwitchMaterial>(R.id.switchFlash)
                 if (camera.cameraInfo.hasFlashUnit() && flash.isChecked) {
                     camera.cameraControl.enableTorch(true)
+                    flash.setThumbResource(R.drawable.ic_flashon_fix)
+                } else if (!flash.isChecked){
+                    flash.setThumbResource(R.drawable.ic_flashoff_fix)
                 }
                 if (camera.cameraInfo.hasFlashUnit()) {
                     flash.isEnabled = true
